@@ -1,6 +1,13 @@
 let num_selected = -1;
 let score = 0;
-const dice = ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png"];
+const dice = [
+    "./dice/1.png",
+    "./dice/2.png",
+    "./dice/3.png",
+    "./dice/4.png",
+    "./dice/5.png",
+    "./dice/6.png",
+];
 function select(num) {
     document.getElementById("guess").innerHTML = num;
     num_selected = num;
