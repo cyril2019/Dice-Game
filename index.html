@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DICE</title>
+        <link rel="stylesheet" type="text/css" href="index.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+            type="text/css"
+        />
+        <script src="index.js"></script>
+    </head>
+    <body onload="game()">
+        <div class="game initial">
+            <div class="col-xs center-xs gamearea">
+                <div class="row-sm center">
+                    <p style="font-size: xx-large; font-weight: bolder">
+                        Roll The Dice
+                    </p>
+                    <p></p>
+                </div>
+
+                <div class="row center display">
+                    <div class="col-xs">
+                        <p>Your Guess:</p>
+                        <p id="guess">No guess</p>
+                    </div>
+                    <div class="col-xs">
+                        <img
+                            style="width: 50px; height: 50px"
+                            src="1.png"
+                            id="imgDice"
+                        />
+                    </div>
+                    <div class="col-xs">
+                        <p>Score:</p>
+                        <p id="score">0</p>
+                    </div>
+                </div>
+                <div class="col-xs center-xs">
+                    <div class="row-xs">
+                        <button class="but" id="buti" onclick="select(1)">
+                            1
+                        </button>
+                        <button class="but" onclick="select(2)">2</button>
+                        <button class="but" onclick="select(3)">3</button>
+                    </div>
+                    <div class="row-xs">
+                        <button class="but" onclick="select(4)">4</button>
+                        <button class="but" onclick="select(5)">5</button>
+                        <button class="but" onclick="select(6)">6</button>
+                    </div>
+                </div>
+                <div class="row-xs center-xs bottom">
+                    <p id="btext">Loading! Game will start in a few seconds!</p>
+                    <p id="restext" style="font-weight: 1000"></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
